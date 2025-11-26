@@ -8,8 +8,8 @@ const Holdings = () => {
   const [allHoldings, setAllHoldings] = useState([]);
   const [allOrders, setAllOrders] = useState([]);
 
-  const url1 = "http://localhost:3002/allHoldings";
-  const url2 = "http://localhost:3002/allOrders";
+  const url1 = "https://zerodha-backend-pqef.onrender.com/allHoldings";
+  const url2 = "https://zerodha-backend-pqef.onrender.com/allOrders";
 
   useEffect(() => {
     async function fetchData() {
