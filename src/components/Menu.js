@@ -25,7 +25,7 @@ const Menu = () => {
     localStorage.removeItem("loggedInUser");
     handleSuccess("User Loggedout");
     setTimeout(() => {
-      window.location.href = "http://localhost:3000";
+      window.location.href = "https://zerodha-frontend-g58c.onrender.com/";
     }, 1000);
   }
 
