@@ -27,7 +27,7 @@ function Login() {
       return handleError("name, email and password are required");
     }
     try {
-      const url = "http://localhost:3002/auth/login";
+      const url = "https://zerodha-backend-pqef.onrender.com/auth/login";
       const response = await fetch(url, {
         method: "POST",
         headers: {
@@ -44,7 +44,7 @@ function Login() {
         localStorage.setItem("loggedInUser", name);
         setTimeout(() => {
           if (jwtToken) {
-            window.location.href = "http://localhost:3001/";
+            window.location.href = "https://zerodha-dashboard-cvi8.onrender.com";
           }
         }, 1000);
       } else if (error) {
